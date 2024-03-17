@@ -70,6 +70,7 @@ export default function CandidateTable({ candidates, updateCandidateStatus }) {
         }}
         rowSelection={false}
         autoHeight
+        loading={candidates.length === 0}
       />
     </div>
   );
