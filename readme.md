@@ -17,8 +17,9 @@ This repository host Recruiter Tool application, a basic tool for recruiters to 
 
 ## Quick demo
 
-- <a href="https://recruit-tool.onrender.com/api/candidates" target="_blank">API</a>
-- <a href="https://recruit-tool-1.onrender.com/" target="_blank">UI</a>
+- [API](https://recruit-tool.onrender.com/api/candidates)
+- [UI](https://recruit-tool-1.onrender.com/)
+- [Video demo](https://drive.google.com/file/d/14uM-PKOGYmQtdseZyiHbHwDkSc2MB5Jy/view?usp=drive_link)
 
 
 ## Getting Started
@@ -36,7 +37,7 @@ To get a local copy of the frontend up and running, follow these steps:
     npm install
     npm start
    ```
-   - You can verify the server by either viewing logs on the shell, or just open <a href="http://localhost:8000/api/candidates" target="_blank">http://localhost:8000/api/candidates</a>
+   - You can verify the server by either viewing logs on the shell, or just open [http://localhost:8000/api/candidates](http://localhost:8000/api/candidates)
    - For more you can refer to [this](/backend/postman_collection.json) document by importing it to postman.
 
 3. Running frontend ui
@@ -44,7 +45,7 @@ To get a local copy of the frontend up and running, follow these steps:
     npm install
     npm start
     ```
-    - Head over to the mentioned port on the terminal, generally your app will be running on <a href="http://localhost:3000" target="_blank">http://localhost:3000</a>
+    - Head over to the mentioned port on the terminal, generally your app will be running on [http://localhost:3000](http://localhost:3000)
     - To connect UI with the local backend server make below change [here](/frontend/src/services/api.js)
       ```js
        const api = axios.create({ baseURL: url.LIVE });
