@@ -15,6 +15,12 @@ This repository host Recruiter Tool application, a basic tool for recruiters to 
 - React.js
 - Tailwind CSS
 
+## Quick demo
+
+- <a href="https://recruit-tool.onrender.com/api/candidates" target="_blank">API</a>
+- <a href="https://recruit-tool-1.onrender.com/" target="_blank">UI</a>
+
+
 ## Getting Started
 
 To get a local copy of the frontend up and running, follow these steps:
