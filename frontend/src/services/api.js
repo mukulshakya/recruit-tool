@@ -1,11 +1,11 @@
 import axios from "axios";
 
 const url = {
-  LIVE: "",
+  LIVE: "https://recruit-tool.onrender.com/api",
   LOCAL: "http://localhost:8000/api",
 };
 
-const api = axios.create({ baseURL: url.LOCAL });
+const api = axios.create({ baseURL: url.LIVE });
 
 async function requestHandler(func, ...args) {
   try {
