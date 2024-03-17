@@ -32,18 +32,22 @@ function CreateCandidateDialog({ setIsDialogOpen }) {
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
-    api.createCandidate(candidateData).then((data) => {
-      if (data.error) {
-        return alert("Fetch candidates error: " + JSON.stringify(data.error));
-      }
-      window.location.reload();
-    });
+    api
+      .createCandidate(candidateData)
+      .then((data) => {
+        if (data.error) {
+          return alert("Fetch candidates error: " + JSON.stringify(data.error));
+        }
+      })
+      .finally(() => {
+        window.location.reload();
+      });
   };
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center">
       <div className="absolute inset-0 bg-black opacity-50"></div>
-      <div className="relative h-2/3 w-1/3 rounded-md bg-white p-4">
+      <div className="relative w-1/3 rounded-md bg-white p-4">
         <button
           className="absolute right-0 top-0 m-2 text-gray-500 hover:text-gray-700"
           onClick={handleCloseDialog}
