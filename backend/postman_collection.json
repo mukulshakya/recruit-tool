@@ -1,0 +1,301 @@
+{
+	"info": {
+		"_postman_id": "8c43049b-265a-4f3e-825f-de806cd73e3c",
+		"name": "Recruit Tool",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "9847305"
+	},
+	"item": [
+		{
+			"name": "Create a candidate",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nodeExperience\": 1,\n    \"reactExperience\": 3,\n    \"expectedSalary\": 1,\n    \"skills\":\"nodejs\",\n    \"name\":\"Mukul Shakya\",\n    \"email\":\"mukul2@example.com\",\n    \"phone\":\"+919876543210\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/candidates",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"candidates"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create a candidate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"name\": \"Mukul Shakya\",\n    \"email\": \"mukul@example.com\",\n    \"phone\": \"9876543210\",\n    \"skills\": \"java,python\",\n    \"expectedSalary\": \"100000\",\n    \"reactExperience\": 3,\n    \"nodeExperience\": 3\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/candidates",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"candidates"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "233"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"e9-GjZLVcaj9g1dmVCbGVPRiAbheDg\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 17 Mar 2024 13:53:53 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1006,\n    \"name\": \"Mukul Shakya\",\n    \"email\": \"mukul@example.com\",\n    \"phone\": \"9876543210\",\n    \"skills\": \"java,python\",\n    \"expectedSalary\": \"100000\",\n    \"score\": 6,\n    \"updatedAt\": \"2024-03-17T13:53:53.597Z\",\n    \"createdAt\": \"2024-03-17T13:53:53.597Z\",\n    \"status\": null\n}"
+				}
+			]
+		},
+		{
+			"name": "Get a candidate",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nodeExperience\": 1,\n    \"reactExperience\": 3,\n    \"expectedSalary\": 1,\n    \"skills\":\"nodejs\",\n    \"name\":\"Mukul Shakya\",\n    \"email\":\"mukul2@example.com\",\n    \"phone\":\"+919876543210\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/api/candidates",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"candidates"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get a candidate",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nodeExperience\": 1,\n    \"reactExperience\": 3,\n    \"expectedSalary\": 1,\n    \"skills\":\"nodejs\",\n    \"name\":\"Mukul Shakya\",\n    \"email\":\"mukul2@example.com\",\n    \"phone\":\"+919876543210\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/candidates",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"candidates"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "478"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1de-/UPND/ScCtebLazKcDZtv+RY7qY\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 17 Mar 2024 12:38:48 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 2,\n        \"name\": \"Mukul Shakya\",\n        \"email\": \"muklshakya12345@gmail.com\",\n        \"phone\": \"09808240608\",\n        \"skills\": \"cxccxcx\",\n        \"status\": null,\n        \"expectedSalary\": \"44343434\",\n        \"score\": 2,\n        \"createdAt\": \"2024-03-17T12:37:17.155Z\",\n        \"updatedAt\": \"2024-03-17T12:37:17.155Z\"\n    },\n    {\n        \"id\": 1,\n        \"name\": \"Mukul Shakya\",\n        \"email\": \"muklshakya1234@gmail.com\",\n        \"phone\": \"09808240608\",\n        \"skills\": \"cxccxcx\",\n        \"status\": null,\n        \"expectedSalary\": \"7678676868\",\n        \"score\": 2,\n        \"createdAt\": \"2024-03-17T12:35:53.842Z\",\n        \"updatedAt\": \"2024-03-17T12:35:53.842Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Update candidate status",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"status\":\"contacted\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/candidates/1/status",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"candidates",
+						"1",
+						"status"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update candidate status",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"status\":\"hired\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8000/api/candidates/1/status",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"candidates",
+								"1",
+								"status"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "241"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f1-KyK7xFSZ9czZnSuSnF/FDpHT1jE\""
+						},
+						{
+							"key": "Date",
+							"value": "Sun, 17 Mar 2024 13:54:22 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 1,\n    \"name\": \"Mukul Shakya\",\n    \"email\": \"muklshakya1234@gmail.com\",\n    \"phone\": \"09808240608\",\n    \"skills\": \"cxccxcx\",\n    \"status\": \"hired\",\n    \"expectedSalary\": \"7678676868\",\n    \"score\": 2,\n    \"createdAt\": \"2024-03-17T12:35:53.842Z\",\n    \"updatedAt\": \"2024-03-17T12:40:15.615Z\"\n}"
+				}
+			]
+		}
+	]
+}
