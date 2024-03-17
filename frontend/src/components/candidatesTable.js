@@ -7,13 +7,14 @@ import api from "../services/api";
 export default function CandidateTable({ candidates, updateCandidateStatus }) {
   const [statusLoading, setStatusLoading] = React.useState({});
   const columns = [
-    { field: "name", headerName: "name", width: 130 },
-    { field: "email", headerName: "email", width: 250 },
-    { field: "phone", headerName: "phone", width: 150 },
-    { field: "skills", headerName: "skills", width: 300 },
+    { field: "name", headerName: "Name", width: 130 },
+    { field: "email", headerName: "Email", width: 250 },
+    { field: "phone", headerName: "Phone", width: 150 },
+    { field: "score", headerName: "Score", width: 50 },
+    { field: "skills", headerName: "Skills", width: 300 },
     {
       field: "status",
-      headerName: "status",
+      headerName: "Status",
       width: 200,
       renderCell: (ValueFormatterParams) => {
         const { row } = ValueFormatterParams;
@@ -37,7 +38,7 @@ export default function CandidateTable({ candidates, updateCandidateStatus }) {
         );
       },
     },
-    { field: "expectedSalary", headerName: "expectedSalary", width: 150 },
+    { field: "expectedSalary", headerName: "Expected Salary", width: 150 },
   ];
 
   const handleSelectChange = (e, row) => {
